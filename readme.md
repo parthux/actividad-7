@@ -5,11 +5,48 @@ Listado de ejercicios:
 Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable. (utilizar concat)
 Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).
 
+//exercise a
+let userName = 'Matias';
+let userSurname = 'Principe';
+let userConcat= userName.concat(" ",userSurname)
+console.log (userConcat)
+
+//exercise b
+
+let userEmail = 'principematias23@gmail.com'
+let software = 'gmail'
+let sum = new Number(userEmail.length + software.length)
+console.log (sum)
+
 2. Strings
 
 Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).
 Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
 Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
+
+//exercise a
+
+let example = 'aborigenes'
+let example2 = example.substring (0,5)
+console.log(example2)
+
+//exercise b
+
+let word = 'acepciones'
+//Primer caracter en mayuscula.
+let wordFirstLetter = word.substring(0,1)
+    wordFirstLetter = wordFirstLetter.toUpperCase()
+//El resto de caracteres en minuscula.
+let wordOtherLetters = word.substring(1)
+    wordOtherLetters = wordOtherLetters.toLowerCase()
+let wordConcat = wordFirstLetter + wordOtherLetters //let wordConcat = wordFirstLetter.concat(wordOtherLetters)
+console.log(wordConcat)
+
+//exercise c
+
+let word2 = 'hola mundos'
+let wordBlanks = word2.indexOf (' ') //espacio en blanco
+console.log(wordBlanks)
 
 3. Arrays
 

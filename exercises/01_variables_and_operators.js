@@ -10,7 +10,7 @@ console.log (userConcat)
 
 let userEmail = 'principematias23@gmail.com'
 let software = 'gmail'
-let sum = new Number(userEmail.length + software)
+let sum = new Number(userEmail.length + software.length)
 console.log (sum)
 
 
