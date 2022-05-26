@@ -130,6 +130,21 @@ Crear una variable “Age” que contenga un número entero entre 0 y 100 y mues
 “Mayor” si la edad es mayor o igual a 18 Y menor que 65
 “Jubilado” si la edad es mayor o igual que 65.
 
+//exercise a
+let numberRandom = Math.random();
+
+if(numberRandom >= 0.5){
+
+    alert(numberRandom + ' ' + 'Greater than 0,5');
+
+    } else{
+
+        alert(numberRandom + ' ' + 'Lower than 0,5');
+
+    };
+
+//exercise b
+
 let age = Math.round(Math.random() * 100);
 console.log("Número aleatorio entre 0 y 100: " + age);
 
@@ -152,6 +167,37 @@ if (age < 18) {
 Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
 Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
 Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. Mostrar por la consola del navegador el array final (utilizar console.log).
+
+let array = ['pelota','rosca','mono','mando','raton'];
+
+//exercise a
+for (let cont = 0; cont < array.length; cont++){
+    alert(array[cont]);
+}
+//exercise b
+
+let wordFirstLetter= null;
+let wordOtherLetters= null;
+
+for (let cont = 0; cont < array.length; cont++){
+
+   wordFirstLetter = array[cont].substring(0 , 1);
+   wordFirstLetter = wordFirstLetter.toUpperCase();
+   wordOtherLetters = array[cont].substring(1);
+   wordOtherLetters = wordOtherLetters.toLowerCase();
+   array[cont]= wordFirstLetter + wordOtherLetters;
+   alert(array[cont]);
+}
+//exercise c
+
+let arrayempty= new Array();
+
+for (let cont = 0; cont < 10; cont++){
+
+    arrayempty[cont] = cont;
+
+}
+console.log(arrayempty);
 
 6. Funciones
 
