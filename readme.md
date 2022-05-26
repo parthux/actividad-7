@@ -130,6 +130,23 @@ Crear una variable “Age” que contenga un número entero entre 0 y 100 y mues
 “Mayor” si la edad es mayor o igual a 18 Y menor que 65
 “Jubilado” si la edad es mayor o igual que 65.
 
+let age = Math.round(Math.random() * 100);
+console.log("Número aleatorio entre 0 y 100: " + age);
+
+if (age < 18) {
+
+    console.log ('Menor');
+
+    } else if (age >= 18 && age < 65){
+
+        console.log ('Mayor');
+
+    } else if (age >= 65){
+
+        console.log ('Jubilado');
+
+};
+
 5. For
 
 Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
