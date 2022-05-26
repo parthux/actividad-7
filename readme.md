@@ -58,6 +58,70 @@ Invertir el orden del array (utilizar reverse).
 Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
 Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 
+let array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+//exercise a
+
+console.log(array[5], array[11]);
+
+//exercise b
+
+array.sort((a, b) => {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if (a == b) {
+        return 0;
+    }
+    if (a < b) {
+        return -1;
+    }
+    return 1;
+    } ); // array.sort()
+
+console.log (array);
+
+//exercise c
+
+array.unshift('start');//agregar en el inicio un elemento al array.
+array.push('end');//agregar en el final un elemento al array.
+
+console.log (array);
+
+//exercise d
+
+ array.shift(); //borrar el primer elemento del array
+ array.pop();//borrar el ultimo elemento del array
+
+ console.log (array);
+
+//exercise e
+
+array.sort((a, b) => {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if (a == b) {
+        return 0;
+    }
+    if (a > b) {
+        return -1;
+    }
+    return 1;
+    } );// o array.reverse()
+
+console.log (array);
+
+//exercise f
+
+array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"].join('-'); //agregar un caracter entre elementos.
+let wordArray = array.toString(); //convertir en string.
+console.log (wordArray);
+
+//exercise j
+
+array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+let newArray = array.slice(4, 11);
+console.log(newArray);
+
 4. If Else
 
 Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”. [utilizar alert() ]
